@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌱 Eco Friendly Student Details Form</h1>
+    <form id="studentForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Department:</label>
+      <input type="text" id="department" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Phone Number:</label>
+      <input type="tel" id="phone" required>
+
+      <label>Area of Interest:</label>
+      <input type="text" id="interest" required>
+
+      <label>Short-term Goal:</label>
+      <input type="text" id="shortGoal" required>
+
+      <label>Long-term Goal:</label>
+      <input type="text" id="longGoal" required>
+
+      <button type="button" id="previewBtn">Preview</button>
+    </form>
+
+    <div id="preview" class="preview">
+      <h2>Preview Details</h2>
+      <div id="previewContent"></div>
+      <button id="submitBtn">Submit</button>
+      <button id="editBtn">Edit</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
